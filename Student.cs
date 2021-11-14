@@ -20,5 +20,10 @@ namespace BaseApp
         {
             Console.WriteLine(base.Storage.Save(this));
         }
+
+        public override string ToString()
+        {
+            return base.ToString()+", Year: "+ this.Year;
+        }
     }
 }

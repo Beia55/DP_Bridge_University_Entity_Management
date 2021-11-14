@@ -18,5 +18,10 @@ namespace BaseApp
         }
 
         public abstract void Print();
+
+        public override string ToString()
+        {
+            return "Name:" + this.Name;
+        }
     }
 }
